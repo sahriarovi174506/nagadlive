@@ -52,12 +52,6 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-// aos js //
-AOS.init({
-  duration: 800,
-  once: true,
-  easing: "ease",
-});
 // search bar
 const search_box = document.querySelector(".search_box");
 function activeSearchBar1() {
@@ -74,7 +68,6 @@ const mobileSearchBar = () => {
 const MSearchBar2Hide = () => {
   mobile_search_box.classList.remove("mob_searchbar_show");
 };
-
 // Tabs_area
 function Tabs() {
   var bindAll = function () {

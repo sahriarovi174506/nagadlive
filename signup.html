@@ -99,7 +99,7 @@
             <!-- header_btn -->
             <div class="theme_btns header_btn">
               <a href="login.html">লগইন করুন</a>
-              <a href="signup.html" class="btn_one">সাইনআপ</a>
+              <a href="signup.html" class="btn_one">নিবন্ধন করুন</a>
             </div>
           </div>
         </nav>
@@ -171,7 +171,7 @@
         <div class="mobile_menu_columns">
           <div class="theme_btns header_btn">
             <a href="login.html">লগইন করুন</a>
-            <a href="signup.html" class="btn_one">সাইনআপ</a>
+            <a href="signup.html" class="btn_one">নিবন্ধন করুন</a>
           </div>
         </div>
         <!-- mobile menu social icons -->
@@ -202,10 +202,10 @@
       <div class="container">
         <div class="row">
           <div class="inner_page_contents">
-            <h2>সাইনআপ করুন</h2>
+            <h2>নিবন্ধন করুন</h2>
             <ul>
               <li><a href="./index.html">হোম পেজ</a></li>
-              <li><a>সাইনআপ</a></li>
+              <li><a>নিবন্ধন করুন</a></li>
             </ul>
           </div>
         </div>
@@ -220,20 +220,119 @@
           <div class="row">
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <h3>আপনার নাম</h3>
+                <h3>পুরো নাম</h3>
                 <input
                   type="name"
                   name="name"
                   id="name"
                   class="form-control"
-                  placeholder="নাম"
+                  placeholder="পুরো নাম"
                   required
                 />
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <h3>আপনার ইমেইল</h3>
+                <h3>ব্যবহারকারীর ধরন</h3>
+                <input
+                  type="text"
+                  name="usertype"
+                  id="usertype"
+                  class="form-control"
+                  placeholder="ব্যবহারকারীর ধরন"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>লিঙ্গ</h3>
+                <select
+                  name="gender"
+                  id="gender"
+                  placeholder="লিঙ্গ"
+                  class="form-control"
+                >
+                  <option value="Male">পুরুষ</option>
+                  <option value="Female">মহিলা</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>জিলা</h3>
+                <select
+                  name="city"
+                  id="city"
+                  placeholder="জিলা"
+                  class="form-control"
+                >
+                  <option value="dhaka">ঢাকা</option>
+                  <option value="chittagong">চট্টগ্রাম</option>
+                  <option value="sylhet">সিলেট</option>
+                  <option value="mymensingh">ময়মনসিংহ</option>
+                  <option value="rajshahi">রাজশাহী</option>
+                  <option value="khulna">খুলনা</option>
+                  <option value="barisal">বরিশাল</option>
+                  <option value="cumilla">কুমিল্লা</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>উপজেলা</h3>
+                <input
+                  type="text"
+                  name="upazila"
+                  id="upazila"
+                  class="form-control"
+                  placeholder="উপজেলা"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>পোস্ট অফিস</h3>
+                <input
+                  type="text"
+                  name="postoffice"
+                  id="postoffice"
+                  class="form-control"
+                  placeholder="পোস্ট অফিস"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>ওয়ার্ড নং</h3>
+                <input
+                  type="number"
+                  name="word"
+                  id="word"
+                  class="form-control"
+                  placeholder="ওয়ার্ড নং"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>মোবাইল নাম্বার</h3>
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  class="form-control"
+                  placeholder="মোবাইল নাম্বার"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="form-group">
+                <h3>ইমেইল</h3>
                 <input
                   type="email"
                   name="email"
@@ -246,26 +345,26 @@
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <h3>আপনার নাম্বার</h3>
-                <input
-                  type="number"
-                  name="number"
-                  id="number"
-                  class="form-control"
-                  placeholder="নাম্বার"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-md-6 col-12">
-              <div class="form-group">
-                <h3>আপনার পাসওয়ার্ড</h3>
+                <h3>পাসওয়ার্ড</h3>
                 <input
                   type="password"
                   name="password"
                   id="password"
                   class="form-control"
                   placeholder="পাসওয়ার্ড"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-md-6 col-12 offset-md-3 offset-0">
+              <div class="form-group">
+                <h3>আবার পাসওয়ার্ড</h3>
+                <input
+                  type="password"
+                  name="retypepassword"
+                  id="retypepassword"
+                  class="form-control"
+                  placeholder="আবার পাসওয়ার্ড"
                   required
                 />
               </div>
@@ -344,7 +443,7 @@
           </div>
           <div class="col-md-4 col-12">
             <div class="section_informations">
-              <div class="section_title">
+              <div class="section_title px-0">
                 <h3 class="m-0 text-left">ডাউনলোড নগদ অ্যাপ</h3>
               </div>
               <div class="section_desc pt-2">
@@ -370,18 +469,17 @@
     </div>
     <!------------------JS-files------------->
     <!--jquery-js-file-->
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <!--bootstrap-js-file-->
+    <script src="js/jquery-1.11.0.min.js"></script>
     <!--modernizer-js-file-->
     <script src="js/vendor/modernizr.js"></script>
+    <!--bootstrap-js-file-->
+    <script src="js/bootstrap-min.js"></script>
     <!--slick-slider-js-file-->
     <script src="js/slick-slider-min.js"></script>
     <!--Lity-js-file-->
     <script src="js/lity.js"></script>
     <!--preloader-js-file-->
     <script src="js/jquery.preloadinator.min.js"></script>
-    <!--aosAnimation-js-file-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--custom js-->
     <script src="js/custom.js"></script>
     <script src="js/main.js"></script>

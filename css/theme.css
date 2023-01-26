@@ -574,12 +574,17 @@ section {
     width: 100px;
     height: 100px;
   }
+  .header_area .slick-slide img {
+    height: 300px;
+  }
 }
 /*--------------------------
 ------sponsor_area--------
 --------------------------*/
 .SponSlide img {
   width: 50px !important;
+  padding-bottom: 15px;
+  filter: grayscale();
 }
 .SponSlide {
   font-weight: 700;
@@ -592,9 +597,7 @@ section {
   font-size: 20px;
   font-weight: 600;
 }
-.SponSlide img {
-  padding-bottom: 15px;
-}
+
 /* =====slider arrow style starts===== */
 .sponsor_slider .slick-arrows.slick-arrow button,
 .offer_area .slick-arrows.slick-arrow button {
@@ -654,6 +657,7 @@ section {
 }
 .SponSlide.slick-active.slick-center img {
   transition: 0.3s;
+  filter: none !important;
 }
 .SponSlide.slick-active.slick-center:hover img {
   transform: scale(1.3);

@@ -11,7 +11,6 @@
       verticalSwiping: false,
       speed: 1500,
       slidesToShow: 1,
-      slidesToScroll: 1,
     });
     $(".sponsor_slider")
       .on("init", () => {
@@ -22,6 +21,8 @@
       })
       .slick({
         centerMode: true,
+        autoplay: true,
+        infinite: true,
         centerPadding: 0,
         slidesToShow: 5,
         responsive: [
@@ -64,7 +65,7 @@
       dots: false,
       arrows: true,
       infinite: true,
-      autoplay: false,
+      autoplay: true,
       centerMode: true,
       centerPadding: "120px",
       speed: 1200,

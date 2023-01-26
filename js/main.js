@@ -59,19 +59,6 @@
         $(`.slick-slide[data-slick-index="${gt1}"]`).addClass("gt1");
         $(`.slick-slide[data-slick-index="${gt2}"]`).addClass("gt2");
         // Clone processing when moving from 5 to 0
-        if (current === 5 && next === 0) {
-          $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass("lt2");
-          $(`.slick-slide[data-slick-index="${current}"]`).addClass("lt1");
-          $(`.slick-slide[data-slick-index="${current + 2}"]`).addClass("gt1");
-          $(`.slick-slide[data-slick-index="${current + 3}"]`).addClass("gt2");
-        }
-        // Clone processing when moving from 0 to 5
-        if (current === 0 && next === 5) {
-          $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass("gt2");
-          $(`.slick-slide[data-slick-index="${current}"]`).addClass("gt1");
-          $(`.slick-slide[data-slick-index="${current - 2}"]`).addClass("lt1");
-          $(`.slick-slide[data-slick-index="${current - 3}"]`).addClass("lt2");
-        }
       });
     $(".offers_slider").slick({
       dots: false,

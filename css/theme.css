@@ -248,7 +248,6 @@ section {
 /*---------------------
 ----- mobile_menu------
 --------------------- */
-
 .nav.mobile_nav {
   position: fixed;
   display: block !important;
@@ -343,7 +342,7 @@ section {
   color: #d0392c;
 }
 .hamburger i:hover {
-  transform: rotateZ(90deg);
+  transform: rotateZ(180deg);
 }
 .mobile_nav .header_btn {
   text-align: center;
@@ -403,7 +402,6 @@ section {
   display: flex;
   justify-content: center;
 }
-
 @media only screen and (max-width: 992px) {
   .navOne .primary-menu {
     display: none;
@@ -546,7 +544,7 @@ section {
 }
 .header_btn a:hover {
   background: #fff;
-  color: #222222;
+  color: #d0392c;
   box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
 }
 .header_area .theme_btns.header_btn {

@@ -1,5 +1,3 @@
-("use strict");
-
 // mobile_menu
 const mobMenu_li = document.querySelectorAll(".mobile_menu_li a");
 const subMenu_li = document.querySelectorAll(".submenu.mobile_submenu li");

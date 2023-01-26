@@ -64,7 +64,7 @@
       dots: false,
       arrows: true,
       infinite: true,
-      autoplay: true,
+      autoplay: false,
       centerMode: true,
       centerPadding: "120px",
       speed: 1200,
@@ -91,15 +91,5 @@
     $(".js-preloader").preloadinator({
       minTime: 500,
     });
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player("video-placeholder", {
-        width: 640,
-        height: 360,
-        videoId: "HdzI-191xhU",
-        events: {
-          onReady: initialize,
-        },
-      });
-    }
   });
 })(jQuery);

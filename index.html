@@ -45,7 +45,7 @@
     <!--preloader-end-->
 
     <!--mainnenu-area-start-->
-    <section class="mainmenu_area navOne">
+    <section class="mainmenu_area navOne homepage">
       <div class="container">
         <nav class="nav">
           <div class="nav_left d-flex align-items-center">
@@ -87,15 +87,21 @@
               </ul>
             </div>
           </div>
-          <div class="mobileM_icons">
-            <div class="search_mobile d-lg-none" onclick="mobileSearchBar()">
-              <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="nav_right signupin_ops md">
+            <!-- header_btn -->
+            <div class="mobile_menu_columns">
+              <div class="theme_btns header_btn">
+                <a href="login.html">লগইন করুন</a>
+                <a href="signup.html" class="btn_one">নিবন্ধন করুন</a>
+              </div>
             </div>
+          </div>
+          <div class="mobileM_icons">
             <div class="hamburger" onclick="menuShow()">
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
-          <div class="nav_right">
+          <div class="nav_right signupin_ops sm">
             <!-- header_btn -->
             <div class="mobile_menu_columns">
               <div class="theme_btns header_btn">
@@ -108,25 +114,6 @@
       </div>
     </section>
     <!--mainnenu-area-end-->
-
-    <!-- mobile search bar -->
-    <div class="mobile_search_box">
-      <div class="Mb_SearchBox">
-        <input
-          type="text"
-          placeholder="অনুসন্ধান করুন
-        "
-        />
-        <div class="search_logo">
-          <img src="./image/searchlogo.png" alt="image/searchlogo" />
-        </div>
-      </div>
-      <h3>কোন ফলাফল পাওয়া যায়নি!!</h3>
-      <!-- hide btn -->
-      <div class="hide" onclick="MSearchBar2Hide()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-    </div>
 
     <!-- mobile_nav starts-->
     <nav class="nav mobile_nav">

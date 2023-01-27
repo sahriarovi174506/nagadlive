@@ -50,22 +50,7 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-// search bar
-const search_box = document.querySelector(".search_box");
-function activeSearchBar1() {
-  search_box.classList.add("searchbarmobile_active");
-}
-function SearchBar1Hide() {
-  search_box.classList.remove("searchbarmobile_active");
-}
-// search bar two
-const mobile_search_box = document.querySelector(".mobile_search_box");
-const mobileSearchBar = () => {
-  mobile_search_box.classList.add("mob_searchbar_show");
-};
-const MSearchBar2Hide = () => {
-  mobile_search_box.classList.remove("mob_searchbar_show");
-};
+
 // Tabs_area
 function Tabs() {
   var bindAll = function () {

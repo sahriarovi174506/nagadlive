@@ -38,7 +38,7 @@ section {
   padding: 0 15px;
 }
 .about_area .section_title h3:nth-child(2) {
-    display: none;
+  display: none;
 }
 /*--------------------------
 ------mainmenu_area--------
@@ -68,6 +68,7 @@ section {
 }
 .nav_left {
   gap: 40px;
+  margin-right: 20px;
 }
 .navOne #menu > li > .submenu {
   width: 200px;
@@ -248,6 +249,28 @@ section {
     height: 30px;
   }
 }
+@media only screen and (max-width: 866px) {
+  .theme_btns a {
+    padding: 5px 15px;
+    font-size: 12px;
+  }
+  .theme_btns.header_btn {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .nav {
+    border-radius: 10px;
+    background: #ffffffd4;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .theme_btns a {
+    padding: 3px 10px;
+    font-size: 10px;
+  }
+}
+
 /*---------------------
 ----- mobile_menu------
 --------------------- */
@@ -409,13 +432,11 @@ section {
   .navOne .primary-menu {
     display: none;
   }
-  .nav_right {
-    display: none;
-  }
   .mobileM_icons {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: 0 0 0 20px;
   }
   .nav.mobile_nav {
     opacity: 1;
@@ -427,58 +448,44 @@ section {
     flex-direction: column;
   }
 }
-/*=========== mobile search bar========= */
-.mobile_search_box {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background: #ffffff;
-  z-index: 99999999999999999;
-  padding: 50px 15px;
-  right: -100%;
-  transition: 0.3s all;
+@media only screen and (min-width: 383px) {
+  .homepage .signupin_ops.sm {
+    display: none;
+  }
 }
-.mobile_search_box.mob_searchbar_show {
-  right: 0;
+@media only screen and (max-width: 382px) {
+  .homepage .signupin_ops.md {
+    display: none;
+  }
+  .homepage .signupin_ops.sm {
+    display: block;
+  }
+  .homepage .signupin_ops.sm {
+    margin: 0 auto;
+  }
 }
-.mobile_search_box input {
-  width: 100%;
-  border: none;
-  padding: 17px 15px 17px 65px;
-  border-radius: 100px;
-  box-shadow: 0px 4px 35px 0px rgb(0 0 0 / 10%);
-  outline: none;
+@media only screen and (min-width: 389px) {
+  .innerPage .signupin_ops.sm {
+    display: none;
+  }
 }
-.search_logo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10px;
+@media only screen and (max-width: 388px) {
+  .innerPage .signupin_ops.md {
+    display: none;
+  }
+  .innerPage .signupin_ops.sm {
+    display: block;
+  }
+  .innerPage .signupin_ops.sm {
+    margin: 0 auto;
+  }
 }
-.Mb_SearchBox {
-  position: relative;
+@media only screen and (max-width: 435px) {
+  .signupin_ops.sm {
+    padding-top: 10px;
+  }
 }
-.mobile_search_box h3 {
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: 0.75px;
-  color: #4e4b66;
-  font-size: 18px;
-  margin-top: 30px;
-}
-.mobile_search_box .hide {
-  position: absolute;
-  top: 10px;
-  right: 0px;
-  cursor: pointer;
-}
-.mobile_search_box .hide i {
-  font-size: 25px;
-  color: #d0392c;
-}
-.mobileM_icons > div {
-  display: flex;
-}
+
 /* ----------scroll top---------- */
 .scrollTop {
   position: fixed;
@@ -1054,6 +1061,11 @@ section {
 .inner_page_contents ul {
   justify-content: center;
 }
+@media only screen and (max-width: 766px) {
+  .inner_page_contents h2 {
+    font-size: 35px;
+  }
+}
 /* ==========Contact_form========== */
 .form_submit_btn button {
   background: #d0392c;
@@ -1088,9 +1100,13 @@ section {
   color: darkred;
 }
 .form-control {
-  padding: 30px 20px;
+  padding: 0 10px;
   border-radius: 10px;
+  height: 60px;
 }
 .form-group {
   margin: 0;
+}
+select {
+  cursor: pointer;
 }

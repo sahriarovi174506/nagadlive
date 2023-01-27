@@ -49,7 +49,7 @@
     <!--preloader-end-->
 
     <!--mainnenu-area-start-->
-    <section class="mainmenu_area navOne">
+    <section class="mainmenu_area navOne innerPage">
       <div class="container">
         <nav class="nav">
           <div class="nav_left d-flex align-items-center">
@@ -91,44 +91,33 @@
               </ul>
             </div>
           </div>
-          <div class="mobileM_icons">
-            <div class="search_mobile d-lg-none" onclick="mobileSearchBar()">
-              <i class="fa-solid fa-magnifying-glass"></i>
+          <div class="nav_right signupin_ops md">
+            <!-- header_btn -->
+            <div class="mobile_menu_columns">
+              <div class="theme_btns header_btn">
+                <a href="login.html">লগইন করুন</a>
+                <a href="signup.html" class="btn_one">নিবন্ধন করুন</a>
+              </div>
             </div>
+          </div>
+          <div class="mobileM_icons">
             <div class="hamburger" onclick="menuShow()">
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
-          <div class="nav_right">
+          <div class="nav_right signupin_ops sm">
             <!-- header_btn -->
-            <div class="theme_btns header_btn">
-              <a href="login.html">লগইন করুন</a>
-              <a href="signup.html" class="btn_one">নিবন্ধন করুন</a>
+            <div class="mobile_menu_columns">
+              <div class="theme_btns header_btn">
+                <a href="login.html">লগইন করুন</a>
+                <a href="signup.html" class="btn_one">নিবন্ধন করুন</a>
+              </div>
             </div>
           </div>
         </nav>
       </div>
     </section>
     <!--mainnenu-area-end-->
-
-    <!-- mobile search bar -->
-    <div class="mobile_search_box">
-      <div class="Mb_SearchBox">
-        <input
-          type="text"
-          placeholder="অনুসন্ধান করুন
-        "
-        />
-        <div class="search_logo">
-          <img src="./image/searchlogo.png" alt="image/searchlogo" />
-        </div>
-      </div>
-      <h3>কোন ফলাফল পাওয়া যায়নি!!</h3>
-      <!-- hide btn -->
-      <div class="hide" onclick="MSearchBar2Hide()">
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-    </div>
 
     <!-- mobile_nav starts-->
     <nav class="nav mobile_nav">
@@ -255,66 +244,90 @@
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <h3>লিঙ্গ</h3>
-                <input
-                  type="text"
-                  name="gender"
-                  id="gender"
-                  class="form-control"
-                  placeholder="লিঙ্গ"
-                  required
-                />
+                <select id="gender" name="gender" class="form-control">
+                  <option disabled selected value="">
+                    আপনার লিঙ্গ নির্বাচন করুন
+                  </option>
+                  <option value="Male">পুরুষ</option>
+                  <option value="Female">মহিলা</option>
+                  <option value="other">অন্যান্য</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <h3>জিলা</h3>
-                <input
-                  type="text"
-                  name="city"
-                  id="city"
-                  class="form-control"
-                  placeholder="জিলা"
-                  required
-                />
+                <select id="district" name="district" class="form-control">
+                  <option disabled selected value="district">
+                    আপনার শহর নির্বাচন করুন
+                  </option>
+                  <option value="dhaka">ঢাকা</option>
+                  <option value="ctg">চট্টগ্রাম</option>
+                  <option value="rajshahi">রাজশাহী</option>
+                  <option value="khulna">খুলনা</option>
+                  <option value="bagerhat">বাগেরহাট</option>
+                  <option value="sylhet">সিলেট</option>
+                  <option value="rangpur">রংপুর</option>
+                  <option value="borguna">বরগুনা</option>
+                  <option value="mymensingh">ময়মনসিংহ</option>
+                  <option value="cumilla">কুমিল্লা</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <h3>উপজেলা</h3>
-                <input
-                  type="text"
-                  name="upazila"
-                  id="upazila"
+                <select
+                  id="sub-district"
+                  name="sub-district"
                   class="form-control"
-                  placeholder="উপজেলা"
-                  required
-                />
+                >
+                  <option disabled selected value="upazila">
+                    আপনার উপজেলা নির্বাচন করুন
+                  </option>
+                  <option value="mirsharai">মিরসরাই</option>
+                  <option value="potiya">পটিয়া</option>
+                  <option value="sitakunda">সীতাকুন্ড</option>
+                  <option value="boalkhali">বোয়ালখালী</option>
+                  <option value="fatikchari">ফটিকছড়ি</option>
+                  <option value="hathazari">হাটহাজারী</option>
+                  <option value="raozan">রাউজান</option>
+                  <option value="satkania">সাতকানিয়া</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
-                <h3>পোস্ট অফিস</h3>
-                <input
-                  type="text"
-                  name="postoffice"
-                  id="postoffice"
-                  class="form-control"
-                  placeholder="পোস্ট অফিস"
-                  required
-                />
+                <h3>ইউনিয়ন</h3>
+                <select id="union" name="union" class="form-control">
+                  <option disabled selected value="union">
+                    আপনার ইউনিয়ন নির্বাচন করুন
+                  </option>
+                  <option value="karerhat">করেরহাট</option>
+                  <option value="khoiyachora">খোয়াইচোড়া</option>
+                  <option value="hinguli">হিঙ্গুলী</option>
+                  <option value="shantirhat">শান্তিরহাট</option>
+                  <option value="banglabazar">বাংলাবাজার</option>
+                  <option value="jorarganj">জোরারগঞ্জ</option>
+                  <option value="abutorab">আবুতোরাব</option>
+                  <option value="nijampur">নিজামপুর</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-12">
               <div class="form-group">
                 <h3>ওয়ার্ড নং</h3>
-                <input
-                  type="number"
-                  name="word"
-                  id="word"
-                  class="form-control"
-                  placeholder="ওয়ার্ড নং"
-                  required
-                />
+                <select id="wordno" name="wordno" class="form-control">
+                  <option disabled selected value="wordno">
+                    আপনার ওয়ার্ড নং নির্বাচন করুন
+                  </option>
+                  <option value="1_no">১নং ওয়ার্ড</option>
+                  <option value="2_no">২নং ওয়ার্ড</option>
+                  <option value="3_no">৩নং ওয়ার্ড</option>
+                  <option value="4_no">৪নং ওয়ার্ড</option>
+                  <option value="5_no">৫নং ওয়ার্ড</option>
+                  <option value="6_no">৬নং ওয়ার্ড</option>
+                </select>
               </div>
             </div>
             <div class="col-md-6 col-12">

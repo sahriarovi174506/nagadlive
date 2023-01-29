@@ -355,6 +355,9 @@ section {
   color: #d0392c;
   cursor: pointer;
 }
+.hamburger {
+  display: flex; 
+}
 .hamburger_cross i:hover {
   transform: rotate(45deg) scale(1.2);
 }
